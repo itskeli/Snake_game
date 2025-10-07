@@ -1,5 +1,5 @@
 # =========================
-#  MEMBER 1 – PROJECT INTRODUCTION & SETUP-Samuel
+#  SECTION 1 – PROJECT INTRODUCTION & SETUP-Samuel
 # =========================
 
 import pygame
@@ -34,7 +34,7 @@ BLUE = (0, 0, 255)
 
 
 # =========================
-#  MEMBER 2 – SNAKE AND FOOD SYSTEM
+#  SECTION 2 – SNAKE AND FOOD SYSTEM
 # =========================
 # Snake properties
 # Each block of the snake is a  square.
@@ -61,7 +61,7 @@ def spawn_food():
     else:
         return {"color": RED, "effect": 1}     # Normal food gives +1 growth
 # =========================
-#  MEMBER 3 – SCORING, WALLS, & DISPLAY
+#  SECTION 3 – SCORING, WALLS, & DISPLAY
 # =========================
 
 # Function to show score and level
@@ -92,7 +92,7 @@ def spawn_walls(num):
 
 
 # =========================
-#  MEMBER 4 – GAME LOOP (CONTROLS, MOVEMENT, COLLISIONS)
+#  SECTION 4 – GAME LOOP (CONTROLS, MOVEMENT, COLLISIONS)
 # =========================
 
 # 9. Main Game Loop
@@ -157,7 +157,7 @@ def game_loop():
             screen.blit(final_score_text, [SCREEN_WIDTH / 4 + 50, SCREEN_HEIGHT / 2])
             pygame.display.update()
              # =========================
-            #  MEMBER 1 – Samuel
+            #  SECTION 5 – Samuel
              # =========================
 
             # Wait for user input: press Q to quit or C to play again
@@ -206,7 +206,7 @@ def game_loop():
         # Draw the food (either red or yellow)
         pygame.draw.rect(screen, food["color"], [food_x, food_y, snakeBlock, snakeBlock])
 # =========================
-#  MEMBER 5 – MISSIONS, COMBO SYSTEM, & GAME OVER SCREEN
+#  SECTION 6 – MISSIONS, COMBO SYSTEM, & GAME OVER SCREEN
 # =========================
 
         # Update snake body
@@ -248,7 +248,7 @@ def game_loop():
 
 
 # =========================
-#  MEMBER 6 – WALLS, DIFFICULTY & CONCLUSION
+#  SECTION 7 – WALLS, DIFFICULTY & CONCLUSION
 # =========================
 
         if x1 == food_x and y1 == food_y:
@@ -293,7 +293,7 @@ def game_loop():
 game_loop()
 
 #Additionals
-# run with (python3 Snake_game/snake.py)
+# run with 
 
 #git add .
 #git commit -m "made changes"
