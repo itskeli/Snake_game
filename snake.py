@@ -298,7 +298,7 @@ game_loop()
 #git add .
 #git commit -m "made changes"
 #git pull origin main or your branch name 
-#git push origin main
+#git push origin main/master
 #git pull origin main (Pulling changes)
 #git remote -v
 
