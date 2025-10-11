@@ -299,9 +299,9 @@ game_loop()
 #git commit -m "made changes"
 #git pull origin main or your branch name 
 #git push origin main/master
-#git pull origin main (Pulling changes)
+#git pull origin main/master (Pulling changes)
 #git remote -v
 
 
 #press Q to quit or C to play again
-#we use render instaed of print because we are using a library(pygame)..
+#we use render instead of print because we are using a library(pygame)..
