@@ -4,7 +4,7 @@
 
 import pygame
 import random
-import math
+
 
 #  Initialize Pygame
 # Pygame is a library used to make games in Python.
