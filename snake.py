@@ -210,21 +210,21 @@ def game_loop():
 # =========================
 
         # Update snake body
-        snake_head = [x1, y1]
-        snake_list.append(snake_head)
+        snake_head = [x1, y1] #stores the current position of the snake’s head.
+        snake_list.append(snake_head) #keeps track of all segments of the snake’s body.
         if len(snake_list) > length_of_snake:
             del snake_list[0]
 
         for x in snake_list[:-1]:
             if x == snake_head:
                 game_close = True
-
+#This checks if the head has collided with any part of the body
         for w in walls:
             if x1 == w[0] and y1 == w[1]:
                 game_close = True
-
+#This checks if the snake’s head has collided with any wall block.
         draw_snake(snake_list)
-        display_score(score, level)
+        display_score(score, level) #shows the current score and level.
 
         if mission_active:
             elapsed = (pygame.time.get_ticks() - mission_start_time) / 1000
